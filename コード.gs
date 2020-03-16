@@ -10,8 +10,9 @@ function getForm(e) {
   }
   
   /* send_mail */
-  var from = 'merciapp217@gmail.com';
-  var to = 'merciapp217@gmail.com';
+  var notify_address = myConfig();
+  var from = notify_address;
+  var to = notify_address;
   var retern = e.response.getRespondentEmail();
   var title = 'お問い合わせが送信されました。';
   var content = "下記の内容で、お問い合わせが送信されました。\n"
